@@ -73,21 +73,9 @@
 
 /* Change text color on hover and when clicked */
 .workspace-switcher:hover,
-.workspace-switcher:active {
-    color: white;
-}
-
-/* Specific styles for icons on the panel */
-.xfce4-panel .panel-icon {
-    color: #007acc; /* Default icon color */
-    transition: color 0.3s ease; /* Add transition for color change */
-}
-
-/* Change icon color on hover and when clicked */
+.workspace-switcher:active,
+/* Change color for clicked logo */
 .xfce4-panel .panel-icon:hover,
 .xfce4-panel .panel-icon:active {
     color: white;
-    background-color: white ;
 }
-
-
