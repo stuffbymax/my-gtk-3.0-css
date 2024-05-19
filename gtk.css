@@ -1,10 +1,6 @@
-
 /* Style for the Xfce Panel Window */
 #XfcePanelWindow {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 10px;
     border: 2px solid #007acc; /* Blue border */
@@ -40,20 +36,17 @@
 .toggle:hover {
     background-color: #cce7ff; /* Slightly darker blue on hover */
     border-color: #005fa3; /* Darker blue border on hover */
-    transition: all 0.3s ease;
+    color: white; /* Change text color to white on hover */
 }
 
 /* Style for checked flat and toggle buttons */
 .flat:checked,
 .toggle:checked {
-    font-size: 20px;
     text-shadow: 1px 1px 2px black;
     border-bottom: 3px solid white;
     background-color: #99ccff; /* Light blue background when checked */
-    padding: 4px;
     border-color: #005fa3; /* Darker blue border when checked */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
 }
 
 /* Additional spacing adjustments */
@@ -65,7 +58,36 @@
     margin: 5px 0;
 }
 
-/* Adding a global transition effect for smooth changes */
+/* Global transition effect for smooth changes */
 * {
     transition: all 0.3s ease;
 }
+
+/* Specific styles to make workspace numbers white */
+.workspace-switcher {
+    font-size: 16px; /* Adjust font size as needed */
+    color: #007acc; /* Default text color */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Add transition for color change */
+}
+
+/* Change text color on hover and when clicked */
+.workspace-switcher:hover,
+.workspace-switcher:active {
+    color: white;
+}
+
+/* Specific styles for icons on the panel */
+.xfce4-panel .panel-icon {
+    color: #007acc; /* Default icon color */
+    transition: color 0.3s ease; /* Add transition for color change */
+}
+
+/* Change icon color on hover and when clicked */
+.xfce4-panel .panel-icon:hover,
+.xfce4-panel .panel-icon:active {
+    color: white;
+    background-color: white ;
+}
+
+
