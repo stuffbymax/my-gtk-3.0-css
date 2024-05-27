@@ -79,3 +79,34 @@
 .xfce4-panel .panel-icon:active {
     color: white;
 }
+
+/* Animation for hover effect */
+.flat,
+.toggle {
+    transition: all 0.3s ease;
+}
+
+/* Animation for button click effect */
+.flat:active,
+.toggle:active {
+    transform: scale(0.95); /* Not supported in GTK CSS */
+}
+
+/* Animation for panel opening/closing */
+.xfce4-panel {
+    transition: width: 0.5s ease; /* Adjust as needed */
+}
+
+/* Animation for panel resizing */
+
+/* Animation for tasklist items */
+.tasklist button {
+    transition: all 0.3s ease;
+}
+
+.tasklist button:hover {
+    background-color: #cce7ff; /* Adjust color as needed */
+}
+
+
+
