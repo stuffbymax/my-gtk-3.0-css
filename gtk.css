@@ -52,6 +52,7 @@
 /* Additional spacing adjustments */
 .xfce4-panel {
     margin: 10px;
+    transition: width 0.5s ease; /* Fixed syntax */
 }
 
 .tasklist {
@@ -73,31 +74,15 @@
 
 /* Change text color on hover and when clicked */
 .workspace-switcher:hover,
-.workspace-switcher:active,
+.workspace-switcher:active {
+    color: white;
+}
+
 /* Change color for clicked logo */
 .xfce4-panel .panel-icon:hover,
 .xfce4-panel .panel-icon:active {
     color: white;
 }
-
-/* Animation for hover effect */
-.flat,
-.toggle {
-    transition: all 0.3s ease;
-}
-
-/* Animation for button click effect */
-.flat:active,
-.toggle:active {
-    transform: scale(0.95); /* Not supported in GTK CSS */
-}
-
-/* Animation for panel opening/closing */
-.xfce4-panel {
-    transition: width: 0.5s ease; /* Adjust as needed */
-}
-
-/* Animation for panel resizing */
 
 /* Animation for tasklist items */
 .tasklist button {
@@ -107,6 +92,3 @@
 .tasklist button:hover {
     background-color: #cce7ff; /* Adjust color as needed */
 }
-
-
-
