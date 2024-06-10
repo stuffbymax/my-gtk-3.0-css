@@ -1,10 +1,5 @@
 /* Style for the Xfce Panel Window */
-#XfcePanelWindow {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    border: 2px solid #007acc; /* Blue border */
-}
+
 
 /* Style for checked toggle buttons in the tasklist */
 .xfce4-panel .tasklist .toggle:checked {
@@ -92,3 +87,4 @@
 .tasklist button:hover {
     background-color: #cce7ff; /* Adjust color as needed */
 }
+
