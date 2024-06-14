@@ -11,27 +11,8 @@ window, dialog, headerbar {
     background-color: #1a1b26; /* Dark background */
 }
 
-/* Panel styles */
-.panel {
-    background-color: #000000; /* Black background for the panel */
-    color: #abb2bf; /* Light text for panel */
-}
-
-.panel button {
-    background-color: #1a1b26; /* Dark background for panel buttons */
-    color: #61afef; /* TokiNight theme blue text for buttons */
-    border: 1px solid #61afef; /* TokiNight theme blue border */
-    transition: all 0.3s ease;
-}
-
-.panel button:hover {
-    background-color: #2e3440; /* Darker background on hover */
-    border-color: #61afef; /* TokiNight theme blue border on hover */
-    color: #d8dee9; /* Light text on hover */
-}
-
 /* Style for buttons */
-button {
+button, .flat, .toggle {
     background-color: #1a1b26; /* Dark background */
     border: 1px solid #61afef; /* TokiNight theme blue border */
     border-radius: 5px;
@@ -40,19 +21,19 @@ button {
     transition: all 0.3s ease;
 }
 
-button:hover {
+button:hover, .flat:hover, .toggle:hover {
     background-color: #2e3440; /* Darker background on hover */
     border-color: #61afef; /* TokiNight theme blue border on hover */
     color: #d8dee9; /* Light text on hover */
 }
 
-button:active {
+button:active, .flat:active, .toggle:active {
     background-color: #434c5e; /* Even darker background when active */
     border-color: #61afef; /* TokiNight theme blue border when active */
     color: #d8dee9; /* Light text when active */
 }
 
-button:checked {
+button:checked, .flat:checked, .toggle:checked {
     background-color: #61afef; /* TokiNight theme blue background when checked */
     border-color: #61afef; /* TokiNight theme blue border when checked */
     color: #d8dee9; /* Light text when checked */
@@ -98,12 +79,12 @@ treeview {
     transition: all 0.3s ease;
 }
 
-treeview:selected {
+treeview row:selected {
     background-color: #2e3440; /* Darker background for selected row */
     color: #d8dee9; /* Light text for selected row */
 }
 
-treeview:hover {
+treeview row:hover {
     background-color: #2e3440; /* Darker background for hovered row */
 }
 
@@ -138,11 +119,11 @@ progressbar {
     transition: all 0.3s ease;
 }
 
-progressbar > trough {
+progressbar trough {
     background-color: #2e3440; /* Dark background for progress trough */
 }
 
-progressbar > trough > progress {
+progressbar progress {
     background-color: #61afef; /* TokiNight theme blue color for progress */
 }
 
