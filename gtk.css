@@ -6,13 +6,12 @@
     transition: all 0.3s ease; /* Smooth transitions for all elements */
 }
 
-/* General background color */
-window, dialog, headerbar {
-    background-color: #1a1b26; /* Dark background */
-}
 
-/* Style for buttons */
-button, .flat, .toggle {
+
+/* Style for buttons within panel */
+.xfce4-panel button,
+.xfce4-panel .flat,
+.xfce4-panel .toggle {
     background-color: #1a1b26; /* Dark background */
     border: 1px solid #61afef; /* TokiNight theme blue border */
     border-radius: 5px;
@@ -21,19 +20,25 @@ button, .flat, .toggle {
     transition: all 0.3s ease;
 }
 
-button:hover, .flat:hover, .toggle:hover {
+.xfce4-panel button:hover,
+.xfce4-panel .flat:hover,
+.xfce4-panel .toggle:hover {
     background-color: #2e3440; /* Darker background on hover */
     border-color: #61afef; /* TokiNight theme blue border on hover */
     color: #d8dee9; /* Light text on hover */
 }
 
-button:active, .flat:active, .toggle:active {
+.xfce4-panel button:active,
+.xfce4-panel .flat:active,
+.xfce4-panel .toggle:active {
     background-color: #434c5e; /* Even darker background when active */
     border-color: #61afef; /* TokiNight theme blue border when active */
     color: #d8dee9; /* Light text when active */
 }
 
-button:checked, .flat:checked, .toggle:checked {
+.xfce4-panel button:checked,
+.xfce4-panel .flat:checked,
+.xfce4-panel .toggle:checked {
     background-color: #61afef; /* TokiNight theme blue background when checked */
     border-color: #61afef; /* TokiNight theme blue border when checked */
     color: #d8dee9; /* Light text when checked */
@@ -42,171 +47,3 @@ button:checked, .flat:checked, .toggle:checked {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Style for entries (text inputs) */
-entry {
-    border: 1px solid #61afef; /* TokiNight theme blue border */
-    padding: 5px;
-    border-radius: 5px;
-    background-color: #1a1b26; /* Dark background for entries */
-    color: #abb2bf; /* Light text for entries */
-    transition: all 0.3s ease;
-}
-
-entry:hover {
-    border-color: #61afef; /* TokiNight theme blue border on hover */
-}
-
-/* Style for combobox */
-combobox {
-    padding: 5px;
-    border-radius: 5px;
-    background-color: #1a1b26; /* Dark background for combobox */
-    color: #abb2bf; /* Light text for combobox */
-    border: 1px solid #61afef; /* TokiNight theme blue border */
-    transition: all 0.3s ease;
-}
-
-combobox:hover {
-    border-color: #61afef; /* TokiNight theme blue border on hover */
-}
-
-/* Style for treeviews (e.g., file lists) */
-treeview {
-    border: 1px solid #61afef; /* TokiNight theme blue border */
-    border-radius: 5px;
-    background-color: #1a1b26; /* Dark background for treeview */
-    color: #abb2bf; /* Light text for treeview */
-    transition: all 0.3s ease;
-}
-
-treeview row:selected {
-    background-color: #2e3440; /* Darker background for selected row */
-    color: #d8dee9; /* Light text for selected row */
-}
-
-treeview row:hover {
-    background-color: #2e3440; /* Darker background for hovered row */
-}
-
-/* Style for headers */
-headerbar {
-    background-color: #1a1b26; /* Dark background */
-    color: #d8dee9; /* Light text for headers */
-}
-
-headerbar button {
-    background-color: #1a1b26; /* Dark background */
-    color: #61afef; /* TokiNight theme blue text for buttons */
-    border: 1px solid #61afef; /* TokiNight theme blue border */
-    transition: all 0.3s ease;
-}
-
-headerbar button:hover {
-    background-color: #2e3440; /* Darker background on hover */
-    border-color: #61afef; /* TokiNight theme blue border on hover */
-    color: #d8dee9; /* Light text on hover */
-}
-
-/* Style for labels */
-label {
-    color: #abb2bf; /* Light text for labels */
-}
-
-/* Style for progress bars */
-progressbar {
-    min-height: 10px;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-}
-
-progressbar trough {
-    background-color: #2e3440; /* Dark background for progress trough */
-}
-
-progressbar progress {
-    background-color: #61afef; /* TokiNight theme blue color for progress */
-}
-
-/* Style for scrollbars */
-scrollbar {
-    background-color: #2e3440; /* Dark background for scrollbars */
-    border-radius: 4px;
-    transition: all 0.3s ease;
-}
-
-scrollbar slider {
-    background-color: #61afef; /* TokiNight theme blue color for scrollbar slider */
-    border-radius: 4px;
-}
-
-scrollbar slider:hover {
-    background-color: #434c5e; /* Darker blue on hover */
-}
-
-/* Style for tooltips */
-tooltip {
-    background-color: #1a1b26; /* Dark background for tooltips */
-    color: #d8dee9; /* Light text for tooltips */
-    border-radius: 4px;
-    padding: 5px;
-    font-size: 12px;
-    transition: all 0.3s ease;
-}
-
-/* Style for Wi-Fi icon */
-.status-icon {
-    color: #61afef !important; /* TokiNight theme blue color for status icons */
-}
-
-/* Style for text views */
-textview {
-    background-color: #1a1b26; /* Dark background for textview */
-    color: #abb2bf; /* Light text for textview */
-    border: 1px solid #666666; /* Border for better visibility */
-    transition: all 0.3s ease;
-}
-
-textview:hover {
-    border: 1px solid #61afef; /* TokiNight theme blue border on hover */
-}
-
-/* Style for notebooks (tabs) */
-notebook {
-    background-color: #1a1b26; /* Dark background for notebook */
-    color: #abb2bf; /* Light text for notebook */
-}
-
-notebook tab {
-    background-color: #1a1b26; /* Dark background for tabs */
-    color: #abb2bf; /* Light text for tabs */
-    border: 1px solid #61afef; /* TokiNight theme blue border */
-    transition: all 0.3s ease;
-}
-
-notebook tab:selected {
-    background-color: #2e3440; /* Darker background for selected tab */
-    color: #d8dee9; /* Light text for selected tab */
-}
-
-notebook tab:hover {
-    background-color: #2e3440; /* Darker background on hover */
-}
-
-/* Workspace switcher styles */
-.workspace-switcher {
-    font-size: 16px; /* Adjust font size as needed */
-    color: #61afef; /* TokiNight theme blue text color for workspace switcher */
-    font-weight: bold;
-    transition: color 0.3s ease; /* Add transition for color change */
-}
-
-.workspace-switcher:hover,
-.workspace-switcher:active {
-    color: #d8dee9; /* Light text color on hover and active */
-}
-
-/* Panel icon styles */
-.xfce4-panel .panel-icon:hover,
-.xfce4-panel .panel-icon:active {
-    color: #d8dee9; /* Light text color on hover and active */
-}
